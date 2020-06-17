@@ -5,7 +5,7 @@
   <dimen name="default_padding">5dp</dimen>
   <dimen name="default_space_margin">15dp</dimen>
   <dimen name="extra_dimens">90dp</dimen>
-  <dimen name="extra_bottom_dimens">34dp</dimen>
+  <dimen name="extra_bottom_dimens">45dp</dimen>
 
     <!--Text Size-->
     <dimen name="header_size">24sp</dimen>
