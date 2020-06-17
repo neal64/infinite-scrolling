@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Margin, Padding between View-->
+  <dimen name="default_margin">10dp</dimen>
+  <dimen name="default_padding">5dp</dimen>
+  <dimen name="default_space_margin">15dp</dimen>
+  <dimen name="extra_dimens">90dp</dimen>
+  <dimen name="extra_bottom_dimens">34dp</dimen>
+
+    <!--Text Size-->
+    <dimen name="header_size">24sp</dimen>
+    <dimen name="smallest_size">16sp</dimen>
+    <dimen name="midium_size">20sp</dimen>
+    <dimen name="large_size">22sp</dimen>
+</resources>

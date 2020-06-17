@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repo_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_padding"
+    android:background="@drawable/border_shadow"
+    android:padding="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/repo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_blue"
+        android:textSize="@dimen/midium_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repo_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textSize="@dimen/smallest_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repo_name"/>
+
+    <TextView
+        android:id="@+id/language_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:orientation="horizontal"
+        android:textSize="@dimen/smallest_size"
+        app:layout_constraintEnd_toStartOf="@+id/stargazers_image"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repo_desc"/>
+
+    <ImageView
+        android:id="@+id/stargazers_image"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:contentDescription="@string/str_stargazers"
+        android:src="@drawable/ic_baseline_usb_24"
+        app:layout_constraintBottom_toBottomOf="@id/language_type"
+        app:layout_constraintEnd_toStartOf="@+id/stargazers_count"
+        app:layout_constraintHorizontal_weight=".5"
+        app:layout_constraintStart_toEndOf="@+id/language_type"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/stargazers_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/language_type"
+        app:layout_constraintEnd_toStartOf="@+id/fork_image"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/stargazers_image" />
+
+    <ImageView
+        android:id="@+id/fork_image"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:contentDescription="@string/str_fork"
+        android:foregroundGravity="right"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintBottom_toBottomOf="@id/language_type"
+        app:layout_constraintEnd_toStartOf="@+id/forks_count"
+        app:layout_constraintHorizontal_weight=".5"
+        app:layout_constraintStart_toEndOf="@+id/stargazers_count" />
+
+    <TextView
+        android:id="@+id/forks_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/language_type"
+        app:layout_constraintEnd_toStartOf="@+id/issue_image"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/fork_image" />
+
+    <ImageView
+        android:id="@+id/issue_image"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:contentDescription="@string/str_issues"
+        android:src="@drawable/ic_baseline_error_outline_24"
+        app:layout_constraintBottom_toBottomOf="@id/language_type"
+        app:layout_constraintEnd_toStartOf="@+id/open_issue_count"
+        app:layout_constraintHorizontal_weight=".5"
+        app:layout_constraintStart_toEndOf="@+id/forks_count" />
+
+    <TextView
+        android:id="@+id/open_issue_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="right"
+        app:layout_constraintBaseline_toBaselineOf="@id/language_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toEndOf="@+id/issue_image" />
+
+    <ImageView
+        android:id="@+id/click_Arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/str_repos_issues_click"
+        android:src="@drawable/ic_baseline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Github Repos</string>
+    <string name="str_lang">No Lang.</string>
+    <string name="str_issue_status">Issue Status : %1$s</string>
+    <string name="str_open_issues">%1$s(Open Issues)</string>
+    <string name="str_try_again">Try Again</string>
+    <string name="str_req_error">Request Error, %1$s</string>
+    <string name="str_repos_issues_click">Repos Issues Click</string>
+    <string name="str_issues">Issues</string>
+    <string name="str_fork">Fork</string>
+    <string name="str_stargazers">stargazers</string>
+    <string name="repoList">Repository List</string>
+    <string name="str_no_issues">No Issues</string>
+    <string name="str_all_issue">All States Issues</string>
+    <string name="str_close">Close State Issues</string>
+    <string name="str_open">Open State Issues</string>
+
+    <string-array name="statesArray">
+        <item>@string/str_all_issue</item>
+        <item>@string/str_open</item>
+        <item>@string/str_close</item>
+    </string-array>
+</resources>

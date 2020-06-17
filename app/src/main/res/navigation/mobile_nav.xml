@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nv_view"
+    app:startDestination="@id/homeFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.repolist.view.repos.HomeFragment"
+        android:label="HomeFragment" >
+
+        <argument
+            android:name="name"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_homeFragment_to_issuesFragment"
+            app:destination="@id/issuesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/issuesFragment"
+        android:name="com.example.repolist.view.issues.IssueFragment"
+        android:label="IssuesFragment" />
+</navigation>
