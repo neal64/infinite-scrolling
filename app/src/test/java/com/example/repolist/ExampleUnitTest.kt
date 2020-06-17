@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.repolist
 
 import org.junit.Test
 
